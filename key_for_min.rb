@@ -12,7 +12,9 @@ def key_for_min_value(name_hash)
     keys[0]
     elsif values[1] < values[0] && values[1] < values[2]
     keys[1]
-  else
+    elsif values[2] < values[0] && values[2] < values[1]
     keys[2]
+  else
+    nil
   end
 end
